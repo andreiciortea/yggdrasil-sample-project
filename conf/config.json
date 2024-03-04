@@ -1,0 +1,28 @@
+{
+  "http-config" : {
+    "host" : "localhost",
+    "port" : 8080,
+    "base-uri" : "http://localhost:8080/"
+  },
+  "notification-config" : {
+    "enabled" : true
+  },
+  "environment-config" : {
+    "enabled" : true,
+    "known-artifacts" : [
+      {
+        "class" : "http://example.org/Counter",
+        "template" : "ch.unisg.ics.interactions.Counter"
+      }
+    ],
+    "workspaces" : [
+      {
+        "name" : "61"
+      },
+      {
+        "name" : "102",
+        "parent-name" : "61"
+      }
+    ]
+  }
+}
